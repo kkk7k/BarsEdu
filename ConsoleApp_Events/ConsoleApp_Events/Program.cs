@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
+﻿
 Key key = new Key();
 key.OnKeyPressed += PrintChar;
 key.Run();

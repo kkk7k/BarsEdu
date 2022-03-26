@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskGeneralization", "TaskGeneralization\TaskGeneralization.csproj", "{8309B482-0F29-4FF7-B74A-7D39470AC155}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskCollections", "TaskCollections\TaskCollections.csproj", "{AB74CCE7-7EEF-4D08-890E-8A73DBE17616}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8309B482-0F29-4FF7-B74A-7D39470AC155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8309B482-0F29-4FF7-B74A-7D39470AC155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8309B482-0F29-4FF7-B74A-7D39470AC155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8309B482-0F29-4FF7-B74A-7D39470AC155}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB74CCE7-7EEF-4D08-890E-8A73DBE17616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB74CCE7-7EEF-4D08-890E-8A73DBE17616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB74CCE7-7EEF-4D08-890E-8A73DBE17616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB74CCE7-7EEF-4D08-890E-8A73DBE17616}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

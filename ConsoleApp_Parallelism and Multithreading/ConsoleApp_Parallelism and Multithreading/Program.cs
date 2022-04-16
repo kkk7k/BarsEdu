@@ -1,7 +1,6 @@
 ﻿using ConsoleApp_Parallelism_and_Multithreading;
 
 
-
 Console.WriteLine("Приложение запущено");
 string? mes = null;
 
@@ -12,8 +11,8 @@ while (mes != "/exit")
     if (mes == "/exit")
         break;
     Console.WriteLine($"Будет послано сообщение '{mes}'");
-    
-    
+
+
     var argusList = new List<string>();
     Console.WriteLine("Введите аргументы сообщения. Если аргумент не нужны - введите /end");
     string newArg = Console.ReadLine();
@@ -23,15 +22,13 @@ while (mes != "/exit")
         argusList.Add(newArg);
         Console.WriteLine("Введите следующий аргумент сообщения. Для окончания добавления аргуметнов введите /end");
         newArg = Console.ReadLine();
-
     }
+    
     string[] argusArray = argusList.ToArray();
     
+    ThreadPool.QueueUserWorkItem(callBack => MethodRequest(mes,argusArray));
 
-    var thread = new Thread(MethodRequest);
-    thread.Start();
-
-    void MethodRequest()
+    void MethodRequest(string  mes, string[] argusArray)
     {
         var gui = Guid.NewGuid();
         try
